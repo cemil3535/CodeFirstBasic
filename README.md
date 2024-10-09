@@ -23,3 +23,8 @@ Name: string, name of the game.
 Platform: string, platform on which the game is played (for example: "PC", "PlayStation", "Xbox").
 
 Rating: decimal, rating of the game (between 0 and 10).
+
+###technology used
+- C#
+- Asp.Net Core
+- Entity FrameWork
