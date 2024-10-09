@@ -14,6 +14,18 @@ namespace CodeFirstBasic.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Game>(game =>
+            {
+                game.ToTable("Games");
+                game.HasKey(x => x.Id);
+                game.Property(x => x.Rating).HasColumnType("decimal(3,2)");
+            });
+            modelBuilder.Entity<Movie>(movie =>
+            {
+                movie.ToTable("Movies");
+                movie.HasKey(x => x.Id);
+            });
         }
 
         public DbSet<GameEntity> Games => Set<GameEntity>();
