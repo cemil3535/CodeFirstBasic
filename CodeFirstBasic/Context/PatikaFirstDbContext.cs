@@ -13,7 +13,7 @@ namespace CodeFirstBasic.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<GameEntity>(game =>
             {
@@ -27,7 +27,7 @@ namespace CodeFirstBasic.Context
                 movie.HasKey(x => x.Id);
             });
 
-            base.OnModelCreating(modelBuilder);
+            
         }
 
         public DbSet<GameEntity> Games => Set<GameEntity>();
