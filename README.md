@@ -24,7 +24,7 @@ Platform: string, platform on which the game is played (for example: "PC", "Play
 
 Rating: decimal, rating of the game (between 0 and 10).
 
-###technology used
+### Technology Used
 - C#
 - Asp.Net Core
 - Entity FrameWork
